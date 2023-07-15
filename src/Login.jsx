@@ -14,4 +14,17 @@ const Login = () => {
     const handlePasswordChange = (event) => {
         setPassword(event.target.value);
     };
+
+    const handleLogin = () => {
+        const user = usersData.find(
+            (user) => user.email === email && user.password === password
+        );
+
+        if(user) {
+            setIsLoggedIn(true);
+        }
+        else {
+            alert("Invalid email or password");
+        }
+    };
 }
