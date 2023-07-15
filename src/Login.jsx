@@ -27,4 +27,17 @@ const Login = () => {
             alert("Invalid email or password");
         }
     };
+
+    if(isLoggedIn) {
+        switch(user.role) {
+            case "admin":
+                return <Navigate to= "/admin" />;
+            case "client":
+                return <Navigate to= "/client" />;
+            case "resident":
+                return <Navigate to= "/resident" />;
+        }
+    }
 }
+
+
