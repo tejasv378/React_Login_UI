@@ -29,7 +29,7 @@ const Login = () => {
     };
 
     if(isLoggedIn) {
-        switch(user.role) {
+        switch (user.role) {
             case "admin":
                 return <Navigate to= "/admin" />;
             case "client":
@@ -37,7 +37,21 @@ const Login = () => {
             case "resident":
                 return <Navigate to= "/resident" />;
         }
-    }
-}
+    };
+    
+    return (
+      <div>
+        <h2>Login</h2>
+        <input
+          type="email"
+          placeholder="Enter your email"
+          value={email}
+          onChange={handleEmailChange}
+        />
+      </div>
+    );
+};
+
+export default Login;
 
 
