@@ -48,6 +48,13 @@ const Login = () => {
           value={email}
           onChange={handleEmailChange}
         />
+        <br />
+        <input
+          type="password"
+          placeholder="Enter your password"
+          value={password}
+          onChange={handlePasswordChange}
+        />
       </div>
     );
 };
