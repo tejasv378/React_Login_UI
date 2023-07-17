@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Navigate } from "react-router-dom";
 import usersData from "./users.json";
 
+let user;
+
 const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -16,7 +18,7 @@ const Login = () => {
     };
 
     const handleLogin = () => {
-        const user = usersData.find(
+            user = usersData.find(
             (user) => user.email === email && user.password === password
         );
 
