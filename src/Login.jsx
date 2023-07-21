@@ -42,8 +42,9 @@ const Login = () => {
     };
     
     return (
-      <div>
+      <div className="auth-form-container">
         <h2>Login</h2>
+        <form className="login-form">
         <input
           type="email"
           placeholder="Enter your email"
@@ -58,7 +59,8 @@ const Login = () => {
           onChange={handlePasswordChange}
         />
         <br/>
-        <button onClick={handleLogin}>Login</button>
+        <button className="link-btn" onClick={handleLogin}>Login</button>
+        </form>
       </div>
     );
 };
