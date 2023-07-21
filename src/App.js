@@ -8,6 +8,7 @@ import Resident from "./Resident";
 
 const App = () => {
   return (
+    <div className="App">
     <Router>
       <Routes>
         <Route exact path="/" element={<Login/>}> </Route>
@@ -16,6 +17,7 @@ const App = () => {
         <Route exact path="/resident" element={<Resident/>}> </Route>
       </Routes>
     </Router>
+    </div>
   );
 };
 
