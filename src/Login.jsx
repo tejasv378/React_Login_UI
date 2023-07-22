@@ -59,8 +59,8 @@ const Login = () => {
           onChange={handlePasswordChange}
         />
         <br/>
-        <button className="link-btn" onClick={handleLogin}>Login</button>
         </form>
+        <button onClick={handleLogin}>Login</button>
       </div>
     );
 };
