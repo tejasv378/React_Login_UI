@@ -60,7 +60,7 @@ const Login = () => {
         />
         <br/>
         </form>
-        <button onClick={handleLogin}>Login</button>
+        <button onClick={handleLogin}>Log In</button>
       </div>
     );
 };
