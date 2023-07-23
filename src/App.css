@@ -19,8 +19,10 @@
 
 h2 {
   text-align: center;
-  color: #9932cc;
+  color: #7b68ee;
+  font-weight: bold;
   font-size: 50px;
+  margin: 30px;
 } 
 
 input {
@@ -29,6 +31,21 @@ input {
   border-radius: 25px;
   padding-left: 20px; 
   margin: 5px;
-  font-size: 15px;
+  font-size: 20px;
   border-color: black;
+}
+
+button {
+  width: 200px;
+  height: 40px;
+  border-radius: 25px;
+  color: white;
+  background-color: #7b68ee;
+  border-color: black;
+  text-align: center;
+  position: relative;
+  left: 50px;
+  font-size: 20px;
+  margin: 10px;
+  font-weight: bold;
 }
