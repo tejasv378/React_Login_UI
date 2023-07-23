@@ -49,3 +49,13 @@ button {
   margin: 10px;
   font-weight: bold;
 }
+
+.fgot-psw {
+  background: none;
+  color: #4169e1;
+  border: none;
+  font-size: 15px;
+  font-weight: normal;
+  margin: -5px;
+  left: 160px;
+}
