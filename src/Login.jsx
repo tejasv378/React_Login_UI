@@ -58,6 +58,7 @@ const Login = () => {
           value={password}
           onChange={handlePasswordChange}
         />
+        <button className="fgot-psw">Forgot password?</button>
         <br/>
         </form>
         <button onClick={handleLogin}>Log In</button>
