@@ -62,10 +62,10 @@ const Login = () => {
         <br/>
         </form>
         <button onClick={handleLogin}>Log In</button>
+        <p>OR</p>
+        <button className="reg-btn">Don't have an account? Register here!</button>
       </div>
     );
 };
 
 export default Login;
-
-
